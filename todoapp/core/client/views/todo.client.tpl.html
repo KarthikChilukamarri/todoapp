@@ -1,0 +1,28 @@
+<div ng-controller="todoCtrl">
+
+    <table class="table table-striped" align="center">
+        <thead>
+            <tr>
+                <th>
+                    <h2>To-Do List</h2>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><input maxlength="200px" type="text" ng-model="newTask"></td>
+                <td colspan="2"><i ng-click="add(newTask)" class="glyphicon glyphicon-plus"></i></td>
+
+            </tr>
+            <tr ng-repeat="task in tasks">
+                <td>{{task.task}}</td>
+                <td><span ng-click="done(task)" class="glyphicon glyphicon-ok"></span></td>
+                <td><i ng-click="delete(task)" class="glyphicon glyphicon-trash"></i></td>
+
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>

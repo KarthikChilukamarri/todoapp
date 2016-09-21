@@ -1,0 +1,19 @@
+<div ng-controller="compCtrl">
+    <table class="table table-striped" align="center">
+        <thead>
+        <tr>
+            <th>
+                <h2>Completed Tasks</h2>
+            </th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr ng-repeat="comp in completed">
+            <td>{{comp.task}}</td>
+            <td><i ng-click="delete(comp)" class="glyphicon glyphicon-trash"></i></td>
+        </tr>
+        </tbody>
+
+    </table>
+</div>

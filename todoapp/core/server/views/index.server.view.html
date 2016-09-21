@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todo">
+<head>
+    <meta charset="UTF-8">
+    <title>TodoApp</title>
+
+    <link href="public/lib/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="core/client/css/todo.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div ng-include="'core/client/views/base.client.tpl.html'"></div>
+<div ui-view></div>
+
+<script src="public/lib/bower_components/angular/angular.min.js"></script>
+<script src="public/lib/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="core/client/controllers/core.client.controller.js"></script>
+<script src="core/client/routes/core.client.routes.js"></script>
+
+</body>
+</html>

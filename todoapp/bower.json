@@ -1,0 +1,26 @@
+{
+  "name": "todoapp",
+  "description": "todo",
+  "main": "server.js",
+  "authors": [
+    "Karthik Chilukamarri"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "todo"
+  ],
+  "homepage": "https://github.com/KarthikChilukamarri/todoapp",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",s
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angular-ui-router": "^0.3.1"
+  }
+}
